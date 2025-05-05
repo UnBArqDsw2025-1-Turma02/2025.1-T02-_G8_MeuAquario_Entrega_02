@@ -1,30 +1,18 @@
-# RepositorioTemplate
-Esse repositório é para ser utilizado pelos grupos como um template inicial.
-As seções do Template NÃO DEVEM SER OMITIDAS, sendo TODAS RELEVANTES.
-Demais diretrizes constam no Moodle.
-
-**!! Atenção: Renomeie o seu repositório para (Ano.Semestre)(Turma)_(Grupo)_(NomeDoProjeto)_(Entrega_02)*. !!** 
-
-**!! *Não coloque os nomes dos alunos no título do repositório*. !!**
-
-**!! *Exemplo de título correto: 2025.1(T02)_G1_JogoEducacional_Entrega_02*. !!**  
- 
- (Apague esses comentários)
-
-# Nome do Projeto
+# Meu Aquário
 
 **Código da Disciplina**: FGA0208<br>
-**Número do Grupo**: XX<br>
+**Número do Grupo**: 08<br>
 **Entrega**: 02<br>
 
-## Alunos
+## Aluno(s)
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 19/0085045  |  Brenno da Silva Oliveira |
 
 ## Sobre 
-Contextualize, usando referências, links, e outros materiais como fontes.
+**Meu Aquário** é um espaço digital para entusiastas do aquarismo compartilharem suas experiências, trocarem conhecimentos e conferir dicas sobre a manutenção e criação de aquários. A proposta é criar uma comunidade interativa que una novatos e veteranos do hobby.
+
+Este repositório reúne toda a documentação do projeto referente a Desenho de Software(Modelagem).
 
 ## Screenshots da Segunda Entrega
 Adicione 2 ou mais screenshots em termos de artefatos realizados na entrega.
@@ -33,7 +21,7 @@ Adicione 2 ou mais screenshots em termos de artefatos realizados na entrega.
 
 ( ) SIM
 
-( ) NÃO
+(**X**) NÃO
 
 Se SIM, insira um manual (ou um script) para auxiliar ainda mais os interessados na execução.
 
