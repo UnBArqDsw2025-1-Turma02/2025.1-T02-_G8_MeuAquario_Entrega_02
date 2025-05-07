@@ -16,10 +16,9 @@ Para a elaboração do diagrama de classes, foi utilizada a ferramenta draw.io, 
 
 <h2 align="center">Diagrama de Classes</h2>
 
-<p align="center">
-  <img src="/docs/Assets/Diagrama de Classes-Meu Aquario.png" width="700px" alt="Diagrama de Classes">
-</p>
-<p align="center"><em>Imagem 1 – Diagrama de Classes </em></p>
+![Diagrama de classes](Assets/Diagrama de Classes-Meu Aquario.png)
+<p align="center"><em> Imagem 01 - Diagrama de Classes </em></p>
+<p align="center"><strong>Autor:</strong> Brenno Silva</p>
 
 ---
 
