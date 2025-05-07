@@ -14,9 +14,12 @@ A construção do modelo foi feita com base nos requisitos funcionais e não fun
 
 Para a elaboração do diagrama de classes, foi utilizada a ferramenta draw.io, que oferece recursos visuais intuitivos e compatibilidade com a notação UML, facilitando a criação e edição dos modelos.
 
-## Diagrama de Classes
+<h2 align="center">Diagrama de Classes</h2>
 
-![Diagrama_de_Classes](/docs/Assets/Diagrama%20de%20Classes%20-%20Meu%20Aquario%20.pdf)
+<p align="center">
+  <img src="/docs/Assets/Diagrama de Classes-Meu Aquario.png" width="700px" alt="Diagrama de Classes">
+</p>
+<p align="center"><em>Imagem 1 – Diagrama de Classes </em></p>
 
 ---
 
