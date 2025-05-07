@@ -10,6 +10,6 @@
     - **2.2. Modelagem UML Dinâmica**
         - [2.2. Modelagem UML Dinâmica](Modelagem/2.2.ModelagemDinamica.md)
     - **2.3. Modelagem UML Organizacional**
-        - [2.3. Modelagem UML Organizacional](Modelagem/2.3.ModelagemOrganizacionalCasosDeUso.md)
+        - [2.3. Modelagem UML Organizacional](Modelagem/DiagramaPacotes.md)
     - [2.4. Participações - Modelagem](Modelagem/2.4.ParticipacoesModelagem.md)
     - [2.5. Iniciativas Extras - Modelagem](Modelagem/2.5.IniciativasExtras.md)
