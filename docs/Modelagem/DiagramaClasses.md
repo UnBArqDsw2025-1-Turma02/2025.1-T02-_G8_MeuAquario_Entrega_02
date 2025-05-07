@@ -16,9 +16,7 @@ Para a elaboração do diagrama de classes, foi utilizada a ferramenta draw.io, 
 
 ## Diagrama de Classes
 
-> Clique na imagem para ampliá-la:
-
-![Diagrama de Classes](./caminho/para/o/arquivo/diagrama-de-classes.png)
+![Diagrama_de_Classes](/docs/Assets/Diagrama%20de%20Classes%20-%20Meu%20Aquario%20.pdf)
 
 ---
 
@@ -33,14 +31,24 @@ Para a elaboração do diagrama de classes, foi utilizada a ferramenta draw.io, 
 | email    | String      | Email para login e contato         |
 | senha    | String      | Senha criptografada                |
 | tipo     | TipoUsuario | Enum indicando se é Comum ou Administrador |
-| postagens        | List<Postagem>        | Postagens feitas pelo usuário     |
-| comentarios      | List<Comentario>      | Comentários realizados            |
-| postagensSalvas  | List<PostagemSalva>   | Postagens salvas pelo usuário     |
+| postagens        | List\<Postagem\>        | Postagens feitas pelo usuário     |
+| comentarios      | List\<Comentario\>      | Comentários realizados            |
+| postagensSalvas  | List\<PostagemSalva\>   | Postagens salvas pelo usuário     |
 
-#### Métodos principais:
+#### Métodos:
 
-- `salvarPostagem(Postagem p): void`
-- `comentar(Postagem p, String texto): void`
++ autenticar(email: String, senha: String): boolean
++ criarPostagem(titulo: String, conteudo: String, midias: List\<Midia\>): Postagem
++ editarPerfil(novoNome: String, novoEmail: String): void
++ alterarSenha(senhaAtual: String, novaSenha: String): boolean
++ listarPostagensSalvas(): List\<Postagem\>
+
+#### Relacionamentos:
+
++ *Usuario* cria *Postagem* - Agregação
++ *Usuario* \<\<use>\> *TipoUsuario* - Dependência
++ *Usuario* publica *Comentario* - Associação
++ *Usuario* salva *PostagemSalva* - Associação
 
 ---
 
@@ -53,12 +61,24 @@ Para a elaboração do diagrama de classes, foi utilizada a ferramenta draw.io, 
 | conteudo     | String           | Texto principal                     |
 | dataCriacao  | LocalDate        | Data de criação                     |
 | autor        | Usuario          | Referência ao autor                 |
-| comentarios  | List<Comentario> | Lista de comentários                |
-| midias       | List<Midia>      | Lista de mídias associadas          |
+| comentarios  | List\<Comentario\> | Lista de comentários                |
+| midias       | List\<Midia\>      | Lista de mídias associadas          |
 
-#### Métodos principais:
+#### Métodos:
 
-- `adicionarComentario(Comentario c): void`
++ adicionarComentario(autor: Usuario, texto: String): Comentario
++ adicionarMidia(url: String, tipo: TipoMidia): Midia
++ removerMidia(midiaId: Long): boolean
++ atualizarTitulo(novoTitulo: String): void
++ atualizarConteudo(novoConteudo: String): void
++ listarComentarios(): List\<Comentario\>
+
+#### Relacionamentos:
+
++ *Postagem* é criada por *Usuario* - Agregação
++ *Postagem* é referenciada por *PostagemSalva* - Associação
++ *Postagem* possui *Comentario* - Composição
++ *Postagem* contem *Midia* - Composição
 
 ---
 
@@ -71,6 +91,15 @@ Para a elaboração do diagrama de classes, foi utilizada a ferramenta draw.io, 
 | data         | LocalDate | Data do comentário            |
 | autor        | Usuario   | Autor do comentário           |
 | postagem     | Postagem  | Postagem referenciada         |
+
+#### Métodos:
+
++ editarTexto(novoTexto: String, editor: Usuario): boolean
+
+#### Relacionamentos:
+
++ *Comentario* é publicado por *Usuário* - Associação
++ *Comentario* é possuído por *Postagem* - Composição
 
 ---
 
@@ -85,6 +114,15 @@ Representa uma postagem que foi salva por um usuário, para consulta posterior.
 | postagem    | Postagem | Referência à postagem salva        |
 | dataSalva   | LocalDate| Quando foi salva                   |
 
+#### Métodos:
+
++ adicionarNota(nota: String): void
+
+#### Relacionamentos:
+
++ *PostagemSalva* é salva por *Usuario* - Associação
++ *PostagemSalva* referencia *Postagem* - Associação
+
 ---
 
 ### Classe *Midia*
@@ -96,6 +134,16 @@ Representa uma postagem que foi salva por um usuário, para consulta posterior.
 | tipo     | TipoMidia   | Enum: FOTO ou VIDEO              |
 | postagem | Postagem    | Postagem à qual pertence         |
 
+#### Métodos:
+
++ getUrl(): String
++ getTipo():TipoMidia
+
+#### Relacionamentos:
+
++ *Midia* é contida em *Postagem* - Composição
++ *Midia* \<\<use>\> *TipoMidia* - Dependência
+
 ---
 
 ### Classe *Glossario*
@@ -105,6 +153,15 @@ Representa uma postagem que foi salva por um usuário, para consulta posterior.
 | id       | int     | Identificador                    |
 | termo    | String  | Palavra ou termo técnico         |
 | definicao| String  | Significado do termo             |
+
+#### Métodos:
+
++ buscarTermo(termo: String): Optional\<Glossario\>
++ gets e sets(): void
+
+#### Relacionamentos:
+
++ Independente (não se relaciona diretamente com outras classes). Os dados são apenas consultados por usuários.
 
 ---
 
@@ -120,6 +177,15 @@ Representa uma postagem que foi salva por um usuário, para consulta posterior.
 | temperaturaIdeal | Double | Temperatura ideal da agua para o peixe |
 | dificuldade | NivelCuidado | Enum: Facil, Medio ou Dificil |
 
+#### Métodos:
+
++ gets e sets(): void
+
+#### Relacionamentos:
+
++ *WikiPeixe* \<\<use>\> *NivelCuidado* - Dependência
++ Independente (não se relaciona diretamente com outras classes). Os dados são apenas consultados por usuários.
+
 ---
 
 ### Enum *TipoUsuario*
@@ -129,6 +195,10 @@ Representa uma postagem que foi salva por um usuário, para consulta posterior.
 | Comum |
 | Administrador |
 
+#### Relacionamentos:
+
++ *TipoUsuario* é usado por *Usuario* - Dependência
+
 ### Enum *TipoMidia*
 
 | Tipos |
@@ -137,6 +207,10 @@ Representa uma postagem que foi salva por um usuário, para consulta posterior.
 | Foto |
 | Documento |
 
+#### Relacionamentos:
+
++ *TipoMidia* é usado por *Midia* - Dependência
+
 ### Enum *NivelCuidado*
 
 | Tipos |
@@ -144,6 +218,10 @@ Representa uma postagem que foi salva por um usuário, para consulta posterior.
 | Facil |
 | Medio |
 | Dificil |
+
+#### Relacionamentos:
+
++ *NivelCuidado* é usado por *WikiPeixe* - Dependência
 
 ## Referências Bibliográficas
 
@@ -156,5 +234,7 @@ Representa uma postagem que foi salva por um usuário, para consulta posterior.
 |------|--------|-----------|---------|
 | 1.0 | Criação do arquivo | [Brenno Silva](https://github.com/brenno-silva01) | 05/05/2025 |
 | 1.1 | Adição da descrição do diagrama | [Brenno Silva](https://github.com/brenno-silva01) | 05/05/2025 |
-| 1.2 | Adição da imagem do diagrama | [Brenno Silva](https://github.com/brenno-silva01) | 05/05/2025 | 
+| 1.2 | Adição da imagem do diagrama | [Brenno Silva](https://github.com/brenno-silva01) | 05/05/2025 |
+| 2.0 | Adição dos métodos e relacionamentos à descrição das classes | [Brenno Silva](https://github.com/brenno-silva01) | 06/05/2025 |
+| 2.1 | Atualização da imagem do diagrama | [Brenno Silva](https://github.com/brenno-silva01) | 06/05/2025 | 
 
