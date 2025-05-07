@@ -29,17 +29,23 @@ Assim é facilitado o entendimento darquitetura do sistema, mostrando como ele e
 
 <h2 align="center">Visão Geral do Sistema</h2>
 
-![Diagrama Geral de Pacotes](/docs/Assets/DiagramaPacotes-VisãoGeral-Meu_Aquario.png)
+<div align="center">
+    <img src="../Assets/DiagramaPacotes-VisãoGeral-Meu_Aquario.png" alt="Diagrama Geral de Pacotes">
+</div>
 
 <p align="center"><em>Imagem 01 - Pacote geral do sistema com frontend e backend</em></p>
+<p align="center"><strong>Autor:</strong> Brenno Silva</p>
 
 ---
 
 <h2 align="center">Pacotes Internos e Suas Dependências</h2>
 
-![Diagrama Detalhado de Pacotes](/docs/Assets/DiagramaPacotes-VisãoDetalhada-Meu_Aquario.png.drawio.png)
+<div align="center">
+    <img src="../Assets/DiagramaPacotes-VisãoDetalhada-Meu_Aquario.png.drawio.png" alt="Diagrama Detalhado de Pacotes">
+</div>
 
 <p align="center"><em>Imagem 02 - Estrutura interna dos pacotes frontend e backend</em></p>
+<p align="center"><strong>Autor:</strong> Brenno Silva</p>
 
 ---
 

@@ -16,7 +16,9 @@ Para a elaboração do diagrama de classes, foi utilizada a ferramenta draw.io, 
 
 <h2 align="center">Diagrama de Classes</h2>
 
-![Diagrama de classes](/docs/Assets/Diagrama_de_Classes-Meu_Aquario.png)
+<div align="center">
+    <img src="../Assets/Diagrama_de_Classes-Meu_Aquario.png" alt="Diagrama de classes">
+</div>
 
 <p align="center"><em> Imagem 01 - Diagrama de Classes </em></p>
 <p align="center"><strong>Autor:</strong> Brenno Silva</p>
@@ -239,5 +241,6 @@ Representa uma postagem que foi salva por um usuário, para consulta posterior.
 | 1.1 | Adição da descrição do diagrama | [Brenno Silva](https://github.com/brenno-silva01) | 05/05/2025 |
 | 1.2 | Adição da imagem do diagrama | [Brenno Silva](https://github.com/brenno-silva01) | 05/05/2025 |
 | 2.0 | Adição dos métodos e relacionamentos à descrição das classes | [Brenno Silva](https://github.com/brenno-silva01) | 06/05/2025 |
-| 2.1 | Atualização da imagem do diagrama | [Brenno Silva](https://github.com/brenno-silva01) | 06/05/2025 | 
+| 2.1 | Atualização da imagem do diagrama | [Brenno Silva](https://github.com/brenno-silva01) | 06/05/2025 |
+| 2.2 | Ajuste na exibição do diagrama | [Brenno Silva](https://github.com/brenno-silva01) | 07/05/2025 | 
 
