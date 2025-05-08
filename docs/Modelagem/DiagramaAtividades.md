@@ -25,7 +25,7 @@ Os diagramas foram elaborados na ferramenta draw.io, mantendo o alinhamento com 
 <h2 align="center">Criar Postagem</h2>
 
 <div align="center">
-    <img src="./assets/DiagramaAtividadePostagem.png" alt="Diagrama de Atividade - Criar Postagem">
+    <img src="./assets/DiagramaAtividadePostagem02.png" alt="Diagrama de Atividade - Criar Postagem">
 </div>
 
 <p align="center"><em>Imagem 01 - Fluxo de criação de postagem</em></p>
@@ -133,4 +133,5 @@ Este diagrama apresenta o fluxo completo da autenticação de um usuário. Inclu
 | 2.1    | Adição das imagens do diagrama    | [Brenno Silva](https://github.com/brenno-silva01) | 08/05/2025 |
 | 2.2    | Ajustando referências bibliográficas    | [Brenno Silva](https://github.com/brenno-silva01) | 08/05/2025 |
 | 3.0    | Adição de descrição do fluxo das atividades    | [Brenno Silva](https://github.com/brenno-silva01) | 08/05/2025 |
+| 3.1    | Atualização do diagrama de atividades de postagem    | [Brenno Silva](https://github.com/brenno-silva01) | 08/05/2025 |
 
