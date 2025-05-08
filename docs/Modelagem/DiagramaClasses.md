@@ -17,7 +17,7 @@ Para a elaboração do diagrama de classes, foi utilizada a ferramenta draw.io, 
 <h2 align="center">Diagrama de Classes</h2>
 
 <div align="center">
-    <img src="docs/assets/DiagramaClasses.png" alt="Diagrama de classes">
+    <img src="assets/DiagramaClasses.png" alt="Diagrama de classes">
 </div>
 
 <p align="center"><em> Imagem 01 - Diagrama de Classes </em></p>
