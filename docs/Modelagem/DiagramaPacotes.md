@@ -30,7 +30,7 @@ Assim é facilitado o entendimento darquitetura do sistema, mostrando como ele e
 <h2 align="center">Visão Geral do Sistema</h2>
 
 <div align="center">
-    <img src="assets/DiagramaPacotes01.png" alt="Diagrama Geral de Pacotes">
+    <img src="./assets/DiagramaPacotes01.png" alt="Diagrama Geral de Pacotes">
 </div>
 
 <p align="center"><em>Imagem 01 - Pacote geral do sistema com frontend e backend</em></p>
@@ -41,7 +41,7 @@ Assim é facilitado o entendimento darquitetura do sistema, mostrando como ele e
 <h2 align="center">Pacotes Internos e Suas Dependências</h2>
 
 <div align="center">
-    <img src="assets/DiagramaPacotes02.png" alt="Diagrama Detalhado de Pacotes">
+    <img src="./assets/DiagramaPacotes02.png" alt="Diagrama Detalhado de Pacotes">
 </div>
 
 <p align="center"><em>Imagem 02 - Estrutura interna dos pacotes frontend e backend</em></p>
