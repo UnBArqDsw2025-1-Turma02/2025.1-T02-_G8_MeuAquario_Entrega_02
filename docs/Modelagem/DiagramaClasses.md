@@ -14,6 +14,8 @@ A construção do modelo foi feita com base nos requisitos funcionais e não fun
 
 Para a elaboração do diagrama de classes, foi utilizada a ferramenta draw.io, que oferece recursos visuais intuitivos e compatibilidade com a notação UML, facilitando a criação e edição dos modelos.
 
+## Diagrama de Classes
+
 <h2 align="center">Diagrama de Classes</h2>
 
 <div align="center">
