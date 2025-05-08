@@ -31,6 +31,27 @@ Os diagramas foram elaborados na ferramenta draw.io, mantendo o alinhamento com 
 <p align="center"><em>Imagem 01 - Fluxo de criação de postagem</em></p>
 <p align="center"><strong>Autor:</strong> Brenno Silva</p>
 
+Este diagrama representa o fluxo da funcionalidade "criar postagem". Ele demosntra que para realizar uma postagem o usuário deve estar logado no sistema, e se durante o processo tudo estiver correto é exibido a confirmação de publicação. Há também ramificações opcionais (como o anexo de mídias) e condicionais (como validação dos dados). O fluxo demonstra claramente os caminhos alternativos, como a ausência de login.
+
+**Fluxo da Atividade:**
+
+1. Início  
+2. Criar postagem
+3. Verificar se o usuário está logado
+    - Se não estiver logado: É redirecionado para a tela de login
+    - se estiver logado: Irá para a tela de criação de postagem   
+4. Exibir tela de criação de postagem  
+5. Preencher título e conteúdo da postagem  
+6. Verificar se o usuário deseja anexar mídias  
+    - Se sim: Selecionar imagens ou vídeos 
+    - se não: Já pode enviar a postagem 
+7. Enviar a postagem  
+8. Validar os dados preenchidos  
+    - Se inválidos: Exibir mensagem de erro e depois é redirecionado para o tópico 5.  
+    - Se válidos: É exibido a confimação da postagem    
+9. Exibir confirmação da postagem  
+10. Fim
+
 ---
 
 <h2 align="center">Comentar em Postagem</h2>
@@ -41,6 +62,25 @@ Os diagramas foram elaborados na ferramenta draw.io, mantendo o alinhamento com 
 
 <p align="center"><em>Imagem 02 - Fluxo de comentário em uma postagem</em></p>
 <p align="center"><strong>Autor:</strong> Brenno Silva</p>
+
+O diagrama descreve o processo em que um usuário interage com uma postagem existente através de um comentário. Mostra a verificação de login, entrada de texto, envio, validação e exibição. Também cobre os fluxos alternativos em caso de erro de validação ou ausência de login.
+
+**Fluxo da Atividade:**
+
+1. Início
+2. Realizar comentário
+3. Verificar se o usuário está logado  
+   - Se não estiver logado: redirecionar para tela de login 
+   - Se estiver logado: O usário tem permição para fazer comentários
+4. Permitir o usuário realizar comentários  
+5. Digitar o conteúdo do comentário  
+6. Enviar o comentário  
+7. Validar o conteúdo do comentário  
+   - Se inválido: Exibir mensagem de erro e depois redirecionado para o tópico 5.
+   - se válido: É publicado o comentário
+8. Publicar comentário  
+9. Exibir o novo comentário na postagem  
+10. Fim
 
 ---
 
@@ -53,13 +93,22 @@ Os diagramas foram elaborados na ferramenta draw.io, mantendo o alinhamento com 
 <p align="center"><em>Imagem 03 - Fluxo de autenticação de usuário</em></p>
 <p align="center"><strong>Autor:</strong> Brenno Silva</p>
 
----
+Este diagrama apresenta o fluxo completo da autenticação de um usuário. Inclui desde o preenchimento do formulário até a verificação das credenciais e o redirecionamento em caso de sucesso. Também faz a verifcação se os campos preenchidos estão corretos.
 
-## Considerações Finais
+**Fluxo da Atividade:**
 
-A modelagem dinâmica através dos diagramas de atividades permitiu descrever com precisão as funcionalidades mais importantes do sistema *Meu Aquário*, evidenciando tanto a participação do usuário quanto o comportamento interno do sistema. A representação detalhada dos fluxos auxilia no desenvolvimento, teste e validação de cada funcionalidade.
-
-Esses diagramas estão alinhados com os requisitos identificados, fortalecem o vínculo com os diagramas de caso de uso e complementam a documentação técnica de forma eficiente e compreensível.
+1. Início  
+2. Exibir tela de login  
+3. Usuário preenche e-mail e senha  
+4. Usuário envia o formulário  
+5. O sistema valida os campos preenchidos  
+   - Se inválidos: Exibir mensagem de erro e redireciona para o tópico 2.
+   - se válidos: Passa para a verificação das credenciais  
+6. O sistema verifica se as credenciais estão corretas  
+   - Se incorretas: exibir erro de autenticação e redireciona para o tópico 2. 
+   - Se corretas: autenticar o usuário e criar sessão/token  
+7. Redirecionar para a página principal  
+8. Fim
 
 ---
 
@@ -81,6 +130,7 @@ Esses diagramas estão alinhados com os requisitos identificados, fortalecem o v
 |--------|-----------------------------------------------|--------------------------------------------|------------|
 | 1.0    | Criação do documento                          | [Brenno Silva](https://github.com/brenno-silva01) | 07/05/2025 |
 | 2.0    | Adição do conteúdo textual da página    | [Brenno Silva](https://github.com/brenno-silva01) | 07/05/2025 |
-| 2.1    | Adição das imagens do diagrama    | [Brenno Silva](https://github.com/brenno-silva01) | 07/05/2025 |
-| 2.2    | Ajustando referências bibliográficas    | [Brenno Silva](https://github.com/brenno-silva01) | 07/05/2025 |
+| 2.1    | Adição das imagens do diagrama    | [Brenno Silva](https://github.com/brenno-silva01) | 08/05/2025 |
+| 2.2    | Ajustando referências bibliográficas    | [Brenno Silva](https://github.com/brenno-silva01) | 08/05/2025 |
+| 3.0    | Adição de descrição do fluxo das atividades    | [Brenno Silva](https://github.com/brenno-silva01) | 08/05/2025 |
 
