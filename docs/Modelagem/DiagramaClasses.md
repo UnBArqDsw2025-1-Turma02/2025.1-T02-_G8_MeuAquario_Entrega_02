@@ -10,7 +10,7 @@ A diagramação foi feita utilizando boas práticas de engenharia de software, s
 
 ## Metodologia
 
-A construção do modelo foi feita com base nos requisitos funcionais e não funcionais levantados durante a fase de análise. Utilizou-se a abordagem orientada a objetos, respeitando princípios como encapsulamento, responsabilidade única e coesão. A notação UML (Unified Modeling Language) foi aplicada seguindo os exemplos dos conteúdos usados como referência.
+A construção do modelo foi feita com base nos [requisitos](https://unbarqdsw2025-1-turma02.github.io/2025.1-T02-_G8_MeuAquario_Entrega_02/#/Modelagem/ReplanejamentoProjeto) funcionais e não funcionais levantados. Utilizou-se a abordagem orientada a objetos, respeitando princípios como encapsulamento, responsabilidade única e coesão. A notação UML (Unified Modeling Language) foi aplicada seguindo os exemplos dos conteúdos usados como referência.
 
 Para a elaboração do diagrama de classes, foi utilizada a ferramenta draw.io, que oferece recursos visuais intuitivos e compatibilidade com a notação UML, facilitando a criação e edição dos modelos.
 
